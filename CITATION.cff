@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this artifact, please cite the accompanying paper and this repository release."
+title: "DevCARE-SE: Partial Replication Package"
+type: dataset
+version: 1.0.0
+date-released: 2026-10-06
+repository-code: "https://github.com/Geki8904/DevCARE-SE-artifact"
+authors:
+  - family-names: "Nguyen"
+    given-names: "Minh Tam"
+  - family-names: "Truong"
+    given-names: "Long"
+  - family-names: "Nguyen"
+    given-names: "Quang Vinh"
+  - family-names: "La"
+    given-names: "Nguyen Phuc An"
+  - family-names: "Hoang"
+    given-names: "Ngoc Minh Chau"
+  - family-names: "Nguyen"
+    given-names: "Thi Cam Huong"
+preferred-citation:
+  type: conference-paper
+  title: "DevCARE-SE: A Multi-Cohort Feasibility Study of Expert-Informed Pull Request Review Prioritization"
+  year: 2026
+  authors:
+    - family-names: "Nguyen"
+      given-names: "Minh Tam"
+    - family-names: "Truong"
+      given-names: "Long"
+    - family-names: "Nguyen"
+      given-names: "Quang Vinh"
+    - family-names: "La"
+      given-names: "Nguyen Phuc An"
+    - family-names: "Hoang"
+      given-names: "Ngoc Minh Chau"
+    - family-names: "Nguyen"
+      given-names: "Thi Cam Huong"

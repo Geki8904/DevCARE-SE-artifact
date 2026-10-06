@@ -1,0 +1,95 @@
+{
+  "analysis": "Independent conditional label-noise scenario analysis",
+  "source_test_rows": 225,
+  "source_proxy_positives": 90,
+  "repeats_per_scenario": 20000,
+  "seed": 20260722,
+  "top_k": 23,
+  "assumption": "Expansion-audit conditional proxy error rates are applied independently to the combined temporal test. This is a stress test, not latent-label recovery or a claim that audit error rates transport across cohorts.",
+  "scenarios": {
+    "audit_central": {
+      "parameters": {
+        "p_true_if_proxy_positive": 0.7544814340588988,
+        "p_true_if_proxy_negative": 0.34968314321926475
+      },
+      "latent_prevalence": {
+        "mean": 0.5115817777777777,
+        "q025": 0.4533333333333333,
+        "median": 0.5111111111111111,
+        "q975": 0.5733333333333334
+      },
+      "hybrid_minus_c2_pr_auc": {
+        "mean": 0.0022718781608302846,
+        "q025": -0.044587147414660536,
+        "median": 0.0026834956213696026,
+        "q975": 0.04713816903043909
+      },
+      "hybrid_pr_auc_greater_than_c2_probability": 0.5463,
+      "c2_pr_auc_greater_than_hybrid_probability": 0.4537,
+      "hybrid_minus_c2_p_at_10": {
+        "mean": -0.03535,
+        "q025": -0.13043478260869568,
+        "median": -0.04347826086956519,
+        "q975": 0.08695652173913038
+      },
+      "hybrid_p_at_10_greater_than_c2_probability": 0.15405,
+      "c2_p_at_10_greater_than_hybrid_probability": 0.61075
+    },
+    "higher_label_quality": {
+      "parameters": {
+        "p_true_if_proxy_positive": 0.8770806658130602,
+        "p_true_if_proxy_negative": 0.22391816042006163
+      },
+      "latent_prevalence": {
+        "mean": 0.4851028888888888,
+        "q025": 0.43555555555555553,
+        "median": 0.48444444444444446,
+        "q975": 0.5333333333333333
+      },
+      "hybrid_minus_c2_pr_auc": {
+        "mean": 0.003373950622735414,
+        "q025": -0.03969587423976341,
+        "median": 0.00404625255090163,
+        "q975": 0.042940257251232766
+      },
+      "hybrid_pr_auc_greater_than_c2_probability": 0.5765,
+      "c2_pr_auc_greater_than_hybrid_probability": 0.4235,
+      "hybrid_minus_c2_p_at_10": {
+        "mean": -0.05649130434782607,
+        "q025": -0.13043478260869568,
+        "median": -0.0434782608695653,
+        "q975": 0.04347826086956519
+      },
+      "hybrid_p_at_10_greater_than_c2_probability": 0.04895,
+      "c2_p_at_10_greater_than_hybrid_probability": 0.79105
+    },
+    "lower_label_quality": {
+      "parameters": {
+        "p_true_if_proxy_positive": 0.6266538625693555,
+        "p_true_if_proxy_negative": 0.49181604200615603
+      },
+      "latent_prevalence": {
+        "mean": 0.5454344444444444,
+        "q025": 0.48,
+        "median": 0.5466666666666666,
+        "q975": 0.6088888888888889
+      },
+      "hybrid_minus_c2_pr_auc": {
+        "mean": 0.000810902764825871,
+        "q025": -0.04413075569441039,
+        "median": 0.0007246580023790861,
+        "q975": 0.04587112639338898
+      },
+      "hybrid_pr_auc_greater_than_c2_probability": 0.5139,
+      "c2_pr_auc_greater_than_hybrid_probability": 0.4861,
+      "hybrid_minus_c2_p_at_10": {
+        "mean": -0.011547826086956522,
+        "q025": -0.13043478260869568,
+        "median": 0.0,
+        "q975": 0.08695652173913049
+      },
+      "hybrid_p_at_10_greater_than_c2_probability": 0.28995,
+      "c2_p_at_10_greater_than_hybrid_probability": 0.43455
+    }
+  }
+}

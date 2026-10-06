@@ -1,0 +1,139 @@
+{
+  "source_artifact": "outputs\\expanded-training\\devcare_expanded_730.csv",
+  "source_rows": 730,
+  "source_rows_before_filter": 730,
+  "max_analysis_error_ratio": null,
+  "split_policy": "repository-wise temporal; first 70% development, last 30% test; last 25% of development used for alpha validation",
+  "expert_weights": [
+    0.32,
+    0.24,
+    0.18,
+    0.26
+  ],
+  "normalization": "P90 caps estimated without the evaluated block",
+  "selected_alpha_expert": {
+    "Logistic Context": 0.45,
+    "Random Forest Context": 0.45,
+    "LightGBM Context": 0.2
+  },
+  "bootstrap": {
+    "expert_context_vs_code": {
+      "observed_delta_pr_auc": -0.015210492995009206,
+      "ci_2_5": -0.06268147669685273,
+      "ci_97_5": 0.026708290656239524,
+      "positive_rate": 0.2172,
+      "valid_samples": 5000
+    },
+    "logistic_context_vs_code": {
+      "observed_delta_pr_auc": 0.008814403110184443,
+      "ci_2_5": -0.028693609056847036,
+      "ci_97_5": 0.04824024601229771,
+      "positive_rate": 0.6802,
+      "valid_samples": 5000
+    },
+    "lightgbm_context_vs_code": {
+      "observed_delta_pr_auc": 0.001777381954754853,
+      "ci_2_5": -0.05743595167605851,
+      "ci_97_5": 0.052072864605314365,
+      "positive_rate": 0.4894,
+      "valid_samples": 5000
+    },
+    "hybrid_rf_vs_expert": {
+      "observed_delta_pr_auc": 0.001538792308013237,
+      "ci_2_5": -0.04258810111265665,
+      "ci_97_5": 0.05479673403269994,
+      "positive_rate": 0.5914,
+      "valid_samples": 5000
+    },
+    "hybrid_rf_vs_rf": {
+      "observed_delta_pr_auc": 0.03440847961519555,
+      "ci_2_5": -0.005217735860163566,
+      "ci_97_5": 0.08250990233267597,
+      "positive_rate": 0.9536,
+      "valid_samples": 5000
+    },
+    "rf_context_vs_expert": {
+      "observed_delta_pr_auc": -0.032869687307182316,
+      "ci_2_5": -0.10914747330139753,
+      "ci_97_5": 0.05009416816248405,
+      "positive_rate": 0.238,
+      "valid_samples": 5000
+    },
+    "rf_context_vs_code": {
+      "observed_delta_pr_auc": -0.011318521450574826,
+      "ci_2_5": -0.06532721343626369,
+      "ci_97_5": 0.03671812133946734,
+      "positive_rate": 0.315,
+      "valid_samples": 5000
+    },
+    "rf_context_vs_expert_clustered": {
+      "observed_delta_pr_auc": -0.032869687307182316,
+      "ci_2_5": -0.23814554545153233,
+      "ci_97_5": 0.16584400754439785,
+      "positive_rate": 0.442,
+      "valid_samples": 5000,
+      "clusters": 14
+    },
+    "rf_context_vs_code_clustered": {
+      "observed_delta_pr_auc": -0.011318521450574826,
+      "ci_2_5": -0.11514780845387748,
+      "ci_97_5": 0.0627389968940035,
+      "positive_rate": 0.3608,
+      "valid_samples": 5000,
+      "clusters": 14
+    },
+    "hybrid_logistic_vs_c2": {
+      "observed_delta_pr_auc": 1.921102466873048e-05,
+      "ci_2_5": -0.052585006304269384,
+      "ci_97_5": 0.051946126817802356,
+      "positive_rate": 0.5194,
+      "valid_samples": 5000
+    },
+    "hybrid_logistic_vs_expert": {
+      "observed_delta_pr_auc": 0.04401705224034003,
+      "ci_2_5": -0.0022786372885962906,
+      "ci_97_5": 0.091791473659954,
+      "positive_rate": 0.9682,
+      "valid_samples": 5000
+    },
+    "hybrid_logistic_vs_expert_clustered": {
+      "observed_delta_pr_auc": 0.04401705224034003,
+      "ci_2_5": -0.06597110580485924,
+      "ci_97_5": 0.15946316931063528,
+      "positive_rate": 0.7732,
+      "valid_samples": 5000,
+      "clusters": 14
+    }
+  },
+  "selected_pr_auc_repository_cluster_intervals": {
+    "C2 Complexity": {
+      "observed_pr_auc": 0.5548198482770351,
+      "ci_2_5": 0.33503733148953363,
+      "ci_97_5": 0.8604107925281573,
+      "valid_samples": 5000,
+      "clusters": 14
+    },
+    "Expert DevCARE-SE": {
+      "observed_pr_auc": 0.5108220070613638,
+      "ci_2_5": 0.274729276799008,
+      "ci_97_5": 0.8293729271538146,
+      "valid_samples": 5000,
+      "clusters": 14
+    },
+    "Logistic Context": {
+      "observed_pr_auc": 0.5379612742692127,
+      "ci_2_5": 0.39212649500904306,
+      "ci_97_5": 0.7707702740671243,
+      "valid_samples": 5000,
+      "clusters": 14
+    },
+    "Hybrid Expert + Logistic": {
+      "observed_pr_auc": 0.5548390593017039,
+      "ci_2_5": 0.37661200316150856,
+      "ci_97_5": 0.8355110915087834,
+      "valid_samples": 5000,
+      "clusters": 14
+    }
+  },
+  "data_provenance": "Merged frozen 730-PR artifact: legacy 325 plus expansion 405."
+}

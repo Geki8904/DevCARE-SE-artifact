@@ -1,0 +1,281 @@
+{
+  "dataset": {
+    "rows": 730,
+    "repositories": 14,
+    "positive": 375,
+    "negative": 355
+  },
+  "temporal_split": [
+    {
+      "split": "test",
+      "n": 225,
+      "positives": 90,
+      "prevalence": 0.4
+    },
+    {
+      "split": "train",
+      "n": 371,
+      "positives": 210,
+      "prevalence": 0.5660377358490566
+    },
+    {
+      "split": "validation",
+      "n": 134,
+      "positives": 75,
+      "prevalence": 0.5597014925373134
+    }
+  ],
+  "combined_temporal": {
+    "Hybrid Expert + Logistic": {
+      "roc_auc": 0.6878600823045268,
+      "pr_auc": 0.5548390593017039,
+      "precision_at_10": 0.5652173913043478,
+      "recall_at_10": 0.1444444444444444,
+      "lift_at_10": 1.4130434782608694
+    },
+    "C2 Complexity": {
+      "roc_auc": 0.6740329218106996,
+      "pr_auc": 0.5548198482770351,
+      "precision_at_10": 0.6521739130434783,
+      "recall_at_10": 0.1666666666666666,
+      "lift_at_10": 1.6304347826086956
+    },
+    "Logistic Context": {
+      "roc_auc": 0.6810288065843622,
+      "pr_auc": 0.5379612742692127,
+      "precision_at_10": 0.4347826086956521,
+      "recall_at_10": 0.1111111111111111,
+      "lift_at_10": 1.0869565217391304
+    },
+    "Expert Code-only": {
+      "roc_auc": 0.6602057613168725,
+      "pr_auc": 0.526032500056373,
+      "precision_at_10": 0.5652173913043478,
+      "recall_at_10": 0.1444444444444444,
+      "lift_at_10": 1.4130434782608694
+    },
+    "Expert DevCARE-SE": {
+      "roc_auc": 0.5418930041152263,
+      "pr_auc": 0.5108220070613638,
+      "precision_at_10": 0.5652173913043478,
+      "recall_at_10": 0.1444444444444444,
+      "lift_at_10": 1.4130434782608694
+    },
+    "Random Forest Context": {
+      "roc_auc": 0.6348559670781893,
+      "pr_auc": 0.4779523197541815,
+      "precision_at_10": 0.4347826086956521,
+      "recall_at_10": 0.1111111111111111,
+      "lift_at_10": 1.0869565217391304
+    },
+    "C4 Unfamiliarity": {
+      "roc_auc": 0.4014814814814814,
+      "pr_auc": 0.3573869096480356,
+      "precision_at_10": 0.3478260869565217,
+      "recall_at_10": 0.0888888888888888,
+      "lift_at_10": 0.8695652173913043
+    }
+  },
+  "uncertainty": {
+    "hybrid_logistic_vs_c2": {
+      "observed_delta_pr_auc": 1.921102466873048e-05,
+      "ci_2_5": -0.052585006304269384,
+      "ci_97_5": 0.051946126817802356,
+      "positive_rate": 0.5194,
+      "valid_samples": 5000
+    },
+    "hybrid_logistic_vs_expert": {
+      "observed_delta_pr_auc": 0.04401705224034003,
+      "ci_2_5": -0.0022786372885962906,
+      "ci_97_5": 0.091791473659954,
+      "positive_rate": 0.9682,
+      "valid_samples": 5000
+    },
+    "hybrid_logistic_vs_expert_clustered": {
+      "observed_delta_pr_auc": 0.04401705224034003,
+      "ci_2_5": -0.06597110580485924,
+      "ci_97_5": 0.15946316931063528,
+      "positive_rate": 0.7732,
+      "valid_samples": 5000,
+      "clusters": 14
+    },
+    "logistic_context_vs_code": {
+      "observed_delta_pr_auc": 0.008814403110184443,
+      "ci_2_5": -0.028693609056847036,
+      "ci_97_5": 0.04824024601229771,
+      "positive_rate": 0.6802,
+      "valid_samples": 5000
+    },
+    "rf_context_vs_code": {
+      "observed_delta_pr_auc": -0.011318521450574826,
+      "ci_2_5": -0.06532721343626369,
+      "ci_97_5": 0.03671812133946734,
+      "positive_rate": 0.315,
+      "valid_samples": 5000
+    },
+    "rf_context_vs_code_clustered": {
+      "observed_delta_pr_auc": -0.011318521450574826,
+      "ci_2_5": -0.11514780845387748,
+      "ci_97_5": 0.0627389968940035,
+      "positive_rate": 0.3608,
+      "valid_samples": 5000,
+      "clusters": 14
+    }
+  },
+  "selected_pr_auc_repository_cluster_intervals": {
+    "C2 Complexity": {
+      "observed_pr_auc": 0.5548198482770351,
+      "ci_2_5": 0.33503733148953363,
+      "ci_97_5": 0.8604107925281573,
+      "valid_samples": 5000,
+      "clusters": 14
+    },
+    "Expert DevCARE-SE": {
+      "observed_pr_auc": 0.5108220070613638,
+      "ci_2_5": 0.274729276799008,
+      "ci_97_5": 0.8293729271538146,
+      "valid_samples": 5000,
+      "clusters": 14
+    },
+    "Logistic Context": {
+      "observed_pr_auc": 0.5379612742692127,
+      "ci_2_5": 0.39212649500904306,
+      "ci_97_5": 0.7707702740671243,
+      "valid_samples": 5000,
+      "clusters": 14
+    },
+    "Hybrid Expert + Logistic": {
+      "observed_pr_auc": 0.5548390593017039,
+      "ci_2_5": 0.37661200316150856,
+      "ci_97_5": 0.8355110915087834,
+      "valid_samples": 5000,
+      "clusters": 14
+    }
+  },
+  "leave_one_repository_out": [
+    {
+      "method": "RF Code",
+      "n": 730,
+      "positives": 375,
+      "pooled_roc_auc": 0.5673690140845071,
+      "pooled_pr_auc": 0.5572734014493052,
+      "macro_valid_repo_roc_auc": 0.7228924651244371,
+      "macro_valid_repo_pr_auc": 0.6816037066602822,
+      "valid_repositories": 12
+    },
+    {
+      "method": "RF Context",
+      "n": 730,
+      "positives": 375,
+      "pooled_roc_auc": 0.5947267605633803,
+      "pooled_pr_auc": 0.5567684374297642,
+      "macro_valid_repo_roc_auc": 0.703842102792115,
+      "macro_valid_repo_pr_auc": 0.6995765788571325,
+      "valid_repositories": 12
+    }
+  ],
+  "permutation_importance": [
+    {
+      "feature": "c2_method_complexity",
+      "mean_pr_auc_decrease": 0.0062617022976531,
+      "std_pr_auc_decrease": 0.0152617933304791,
+      "positive_repeat_rate": 0.68
+    },
+    {
+      "feature": "c1_code_churn",
+      "mean_pr_auc_decrease": 0.0032289787280302,
+      "std_pr_auc_decrease": 0.0260634782897112,
+      "positive_repeat_rate": 0.585
+    },
+    {
+      "feature": "c4_author_unfamiliarity",
+      "mean_pr_auc_decrease": -0.0116877479579384,
+      "std_pr_auc_decrease": 0.0203763284228345,
+      "positive_repeat_rate": 0.305
+    },
+    {
+      "feature": "c3_static_findings",
+      "mean_pr_auc_decrease": -0.0305842924331857,
+      "std_pr_auc_decrease": 0.020657004512686,
+      "positive_repeat_rate": 0.07
+    }
+  ],
+  "cohort_sensitivity": {
+    "legacy_325_best": {
+      "roc_auc": 0.5962301587301587,
+      "pr_auc": 0.6718321014386719,
+      "precision_at_10": 0.8181818181818182,
+      "recall_at_10": 0.1607142857142857,
+      "lift_at_10": 1.4756493506493509
+    },
+    "legacy_325_best_method": "Random Forest Context",
+    "expansion_405_best": {
+      "roc_auc": 0.7017973856209151,
+      "pr_auc": 0.5670020856065559,
+      "precision_at_10": 0.6923076923076923,
+      "recall_at_10": 0.2647058823529412,
+      "lift_at_10": 2.5248868778280547
+    },
+    "expansion_405_best_method": "Expert DevCARE-SE"
+  },
+  "analysis_completeness_sensitivity": {
+    "source_rows": 730,
+    "retained_rows": 630,
+    "excluded_rows": 100,
+    "repositories_in_retained_data": 13,
+    "temporal_split": [
+      {
+        "split": "test",
+        "n": 195,
+        "positives": 85,
+        "prevalence": 0.4358974358974359
+      },
+      {
+        "split": "train",
+        "n": 321,
+        "positives": 170,
+        "prevalence": 0.5295950155763239
+      },
+      {
+        "split": "validation",
+        "n": 114,
+        "positives": 61,
+        "prevalence": 0.5350877192982456
+      }
+    ],
+    "hybrid_logistic": {
+      "roc_auc": 0.6769518716577541,
+      "pr_auc": 0.581714614702689,
+      "precision_at_10": 0.6,
+      "recall_at_10": 0.1411764705882353,
+      "lift_at_10": 1.376470588235294
+    },
+    "c2_complexity": {
+      "roc_auc": 0.6409090909090909,
+      "pr_auc": 0.5729191346071856,
+      "precision_at_10": 0.6,
+      "recall_at_10": 0.1411764705882353,
+      "lift_at_10": 1.376470588235294
+    },
+    "c4_unfamiliarity": {
+      "roc_auc": 0.4251336898395722,
+      "pr_auc": 0.4001245344294609,
+      "precision_at_10": 0.35,
+      "recall_at_10": 0.0823529411764705,
+      "lift_at_10": 0.8029411764705882
+    },
+    "hybrid_logistic_vs_c2": {
+      "observed_delta_pr_auc": 0.00879548009550346,
+      "ci_2_5": -0.034760404204399256,
+      "ci_97_5": 0.0553689393268216,
+      "positive_rate": 0.6678,
+      "valid_samples": 5000
+    }
+  },
+  "interpretation_guardrails": [
+    "Hybrid Logistic and C2-only are statistically indistinguishable in PR-AUC.",
+    "C4 does not show a stable incremental benefit on the combined temporal test.",
+    "Model ranking changes sharply between the legacy and expansion cohorts.",
+    "Repository-aware and cohort-sensitivity results must accompany pooled metrics."
+  ]
+}

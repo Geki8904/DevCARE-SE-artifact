@@ -1,0 +1,15 @@
+repository_id,source_cohort,eligible_prs,proxy_positive,analyzer_error_prs,proxy_negative
+R01,legacy_frozen_325,53,52,8,1
+R02,legacy_frozen_325,17,6,0,11
+R03,legacy_frozen_325,10,9,0,1
+R04,legacy_frozen_325,19,14,19,5
+R05,legacy_frozen_325,8,3,1,5
+R06,legacy_frozen_325,8,3,0,5
+R07,legacy_frozen_325,6,0,0,6
+R08,legacy_frozen_325,204,146,14,58
+R09,expansion_2026_07,36,6,4,30
+R10,expansion_2026_07,158,66,24,92
+R11,expansion_2026_07,71,38,3,33
+R12,expansion_2026_07,13,0,0,13
+R13,expansion_2026_07,34,21,0,13
+R14,expansion_2026_07,93,11,27,82

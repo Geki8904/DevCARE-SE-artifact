@@ -1,0 +1,107 @@
+{
+  "scope": "Expansion-cohort external AI-assisted human-in-the-loop audit",
+  "design": {
+    "unique_prs": 80,
+    "double_rated": 40,
+    "single_rated": 40,
+    "human_assessments": 120,
+    "annotator_blinding": "Annotators did not receive each other's labels, DevCARE-SE outputs, or prior study AI screenings.",
+    "ai_assistance": "Annotators reported using general-purpose AI tools to help interpret supplied evidence; humans retained responsibility for labels. Tool identities, prompts, and outputs were not controlled or logged."
+  },
+  "pre_adjudication": {
+    "raw_agreement": 0.55,
+    "cohen_kappa_three_class": 0.178082191780822,
+    "disagreements": 18
+  },
+  "adjudication": {
+    "resolved": 18,
+    "final_label_counts": {
+      "Non-corrective": 36,
+      "Corrective": 44
+    },
+    "final_confidence_counts": {
+      "Medium": 20,
+      "High": 60
+    },
+    "source_counts": {
+      "consensus_adjudication": 18,
+      "independent_agreement": 22,
+      "single_rated_annotator_2": 20,
+      "single_rated_annotator_1": 20
+    }
+  },
+  "proxy_validation": {
+    "weighted_confusion": {
+      "tn": 171.03333333333336,
+      "fn": 91.96666666666664,
+      "fp": 34.86363636363636,
+      "tp": 107.13636363636363
+    },
+    "unweighted_confusion": {
+      "tn": 26,
+      "fn": 14,
+      "fp": 10,
+      "tp": 30
+    },
+    "weighted_precision": 0.7544814340588988,
+    "weighted_recall": 0.538095093145014,
+    "weighted_specificity": 0.8306743590498337,
+    "weighted_npv": 0.6503168567807353,
+    "weighted_accuracy": 0.6868387579498691,
+    "weighted_f1": 0.6281759710031627,
+    "weighted_human_corrective_prevalence": 0.4916124205013093
+  },
+  "stratified_bootstrap_95ci": {
+    "weighted_precision": [
+      0.6266538625693555,
+      0.8770806658130602
+    ],
+    "weighted_recall": [
+      0.4433008164877284,
+      0.6523221862602595
+    ],
+    "weighted_specificity": [
+      0.7512318601622237,
+      0.9074132859289357
+    ],
+    "weighted_npv": [
+      0.508183957993844,
+      0.7760818395799384
+    ],
+    "weighted_f1": [
+      0.5311808506402271,
+      0.7248520710059171
+    ]
+  },
+  "adjudication_sensitivity": {
+    "consensus": {
+      "weighted_precision": 0.7544814340588988,
+      "weighted_recall": 0.538095093145014,
+      "weighted_specificity": 0.8306743590498337,
+      "weighted_f1": 0.6281759710031627,
+      "weighted_human_corrective_prevalence": 0.4916124205013093
+    },
+    "all_disagreements_resolved_as_annotator_1": {
+      "weighted_precision": 0.7040119504908238,
+      "weighted_recall": 0.6284271225368939,
+      "weighted_specificity": 0.8290900705362125,
+      "weighted_f1": 0.6640756988208364,
+      "weighted_human_corrective_prevalence": 0.39278819945486604
+    },
+    "all_disagreements_resolved_as_annotator_2": {
+      "weighted_precision": 0.775608194622279,
+      "weighted_recall": 0.544951569856359,
+      "weighted_specificity": 0.8429565684927415,
+      "weighted_f1": 0.6401359705514557,
+      "weighted_human_corrective_prevalence": 0.4990198279087167
+    },
+    "mass_restore_cases_treated_as_non_corrective": {
+      "weighted_precision": 0.7544814340588988,
+      "weighted_recall": 0.6444451967044069,
+      "weighted_specificity": 0.8539768132549563,
+      "weighted_f1": 0.6951357211873357,
+      "weighted_human_corrective_prevalence": 0.41048367270589486
+    }
+  },
+  "interpretation_constraint": "These labels assess post-merge corrective activity, not causal defect induction or unaided human ground truth."
+}

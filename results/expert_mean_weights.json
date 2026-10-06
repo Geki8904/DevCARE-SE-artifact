@@ -1,0 +1,17 @@
+{
+  "method": "normalized arithmetic mean of five confidential 100-point expert allocations",
+  "indicators": [
+    "C1 code churn",
+    "C2 touched-method complexity",
+    "C3 static findings",
+    "C4 author unfamiliarity"
+  ],
+  "mean_weights": [
+    0.32,
+    0.24,
+    0.18,
+    0.26
+  ],
+  "individual_allocations_released": false,
+  "reason": "participant confidentiality and re-identification risk"
+}
