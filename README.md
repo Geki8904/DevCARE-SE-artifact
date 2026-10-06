@@ -12,7 +12,9 @@ This camera-ready package supports the reported 730-PR, 14-repository feasibilit
 
 ## Citation
 
-Please cite the accompanying paper using `CITATION.cff`. Until a proceedings DOI is assigned, cite the repository release together with the accepted EAI FISAT 2026 paper.
+Archived release v1.0.0: https://doi.org/10.5281/zenodo.23183516
+
+Please cite both the archived artifact and the accompanying accepted EAI FISAT 2026 paper using `CITATION.cff`. The paper citation will be completed with its proceedings DOI once assigned by the publisher.
 
 ## Reproduce the primary comparison
 
@@ -38,3 +40,4 @@ This repository uses a scoped license policy rather than applying one license to
 | De-identified data, aggregate results, figures, and documentation | `data/`, `results/`, `figures/`, `README.md`, `DATA_DICTIONARY.md`, `CITATION.cff` | Creative Commons Attribution 4.0 International (CC BY 4.0) |
 
 See `LICENSE_MATRIX.md`, `LICENSE-CODE`, and `LICENSE-DATA.md` for the exact scope and attribution requirements. Excluded/private material is not licensed because it is not distributed.
+
